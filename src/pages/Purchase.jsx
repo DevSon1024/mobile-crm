@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const Purchase = ({ currentPage }) => {
   const renderView = () => {
     switch (currentPage) {
@@ -8,6 +7,10 @@ const Purchase = ({ currentPage }) => {
         return <NewPurchase />;
       case "purchase-history":
         return <PurchaseHistory />;
+      case "purchase-bill":
+        return <PurchaseBill/>
+      case "purchase-return":
+        return <PurchaseReturn/>
       case "purchase":
       default:
         return <PurchaseView />;
@@ -104,6 +107,21 @@ const NewPurchase = () => {
           Create Invoice
         </button>
       </form>
+    </div>
+  );
+};
+
+const PurchaseBill = () => {
+  return (
+    <div className="sales-view">
+      <h2>Purchase Bill</h2>
+    </div>
+  );
+};
+const PurchaseReturn = () => {
+  return (
+    <div className="sales-view">
+      <h2>Purchase Return</h2>
     </div>
   );
 };

@@ -9,7 +9,6 @@ const Header = () => {
         <img src={logo} alt="Logo" className="header-logo" />
         <div className="shop-info">
           <h1 className="shop-name">Mobile CRM</h1>
-          <p className="shop-tagline">Sales & Inventory Management</p>
         </div>
       </div>
 

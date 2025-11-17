@@ -1,5 +1,7 @@
 // import React, { useState } from "react";
 // import "../styles/Reports.css";
+import "../styles/Sales.css";
+
 
 const Reports = ({ currentPage }) => {
   const renderView = () => {

@@ -15,7 +15,9 @@ const navbarItems = [
     label: "Purchase",
     subItems: [
       { id: "new-purchase", label: "New Purchase", parent:"purchase" },
-      { id: "purchase-history", label: "Purchase History", parent:"purchase" }
+      { id: "purchase-history", label: "Purchase History", parent:"purchase" },
+      { id: "purchase-bill", label: "Purchase Bill", parent:"purchase" },
+      { id: "purchase-return", label: "Purchase Return", parent:"purchase" },
     ],
   },
   { 
