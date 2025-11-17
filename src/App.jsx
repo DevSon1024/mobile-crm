@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar';
+import Header from './components/Header';
 import './App.css';
 import Dashboard from './pages/DashboardPage';
 import Sales from './pages/Sales';
@@ -20,7 +21,7 @@ function App() {
   const[currentPage, setCurrentPage] = useState('dashboard');
 
   const renderPage = () =>{
-    if (['sales','create-invoice','sales-history'].includes(currentPage)){
+    if (['sales','quotation','sales-return','create-invoice','sales-history'].includes(currentPage)){
       return <Sales currentPage={currentPage}/>
     }
     if(['purchase','new-purchase','purchase-history'].includes(currentPage)){
@@ -33,15 +34,9 @@ function App() {
 
     switch(currentPage){
       case 'dashboard': return <Dashboard />;
-      // case 'purchase': return <Purchase />;
-      // case 'new-purchase': return <NewPurchase />;
-      // case 'purchase-history': return <PurchaseHistory />;
       case 'stock': return <Stock />;
       case 'accounts': return <Accounts />;
       case 'suppliers': return <Suppliers />;
-      // case 'reports': return <Reports />;
-      // case 'sales-report': return <SalesReport />;
-      // case 'inventory-report': return <InventoryReport />;
       case 'settings': return <Settings />;
       // case 'service': return <Service />;
       // case 'addon': return <Addon />;
@@ -51,6 +46,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Header/>
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <main className="main-content">
         {renderPage()}

@@ -8,6 +8,10 @@ const Sales = ({ currentPage }) => {
         return <CreateInvoice />;
       case "sales-history":
         return <SalesHistory />;
+      case "quotation":
+        return <Quotation/>
+      case "sales-return":
+        return <SalesReturn/>
       case "sales":
       default:
         return <SalesView />;
@@ -25,6 +29,21 @@ const SalesView = () => {
   return (
     <div className="sales-view">
       <h2>Sales Dashboard</h2>
+    </div>
+  );
+};
+
+const Quotation = () => {
+  return (
+    <div className="quotation">
+      <h2>Quotation Page</h2>
+    </div>
+  );
+};
+const SalesReturn = () => {
+  return (
+    <div className="sales-return">
+      <h2>Sales Return</h2>
     </div>
   );
 };

@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  height: 60px;
+  border-radius: 0 0 18px 18px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+}
+
+.shop-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.shop-tagline {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  margin: 2px 0 0 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid #fff;
+}
+
+.username{
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.notification-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.notification-item:hover {
+  background: #f9f9f9;
+}

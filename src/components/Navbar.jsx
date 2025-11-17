@@ -13,16 +13,6 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
   }
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <button
-          className="logo-button"
-          onClick={() => setCurrentPage("dashboard")}
-        >
-          <img src={logo} alt="Logo" className="logo-image" />
-          <span className="navbar-text">Mobile CRM</span>
-        </button>
-      </div>
-
       <ul className="navbar-links">
         {navbarItems.map((item) => (
           <li key={item.id} className="navbar-item-wrapper">
