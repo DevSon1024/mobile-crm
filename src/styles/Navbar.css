@@ -12,12 +12,15 @@
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
   z-index: 1000;
-  height: 60px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 55px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   margin: 0 10px 0 10px;
   border-radius: 15px;
+  background: rgba(255, 255, 255, 0.18);   /* Light transparent background */
+  backdrop-filter: blur(14px);              /* The blur effect itself */
+  -webkit-backdrop-filter: blur(14px);      /* Safari support */
+  /* border: 1px solid rgba(255,255,255,0.3);  Light border for depth */
 }
 
 .navbar-logo .logo-button {
@@ -81,7 +84,7 @@
 }
 .navbar-item:hover{
   background-color: rgba(255, 255, 255, 0.15);
-  /* transform: translateY(-2px); */
+  transform: translateY(-2px);
 }
 .navbar-item.active {
   background-color: rgba(255, 255, 255, 0.25);
